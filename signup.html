@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro: Book.Net</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    -->
+</head>
+<body>
+    <main>
+        <section class="container-fluid bg">
+            <h1 class="sr-only">Livraria Book net</h1>
+            <section class="row justify-content-center">
+                            
+                <div class="col-12 col-sm-6 col-md-3">
+    
+                    <form action="" class="form-container">
+                        <h3>Book Net</h3>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                              <label for="name" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="name" placeholder="Joao" required>
+                              <div class="valid-feedback">
+                                Bom!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="sobrenome" class="form-label">Sobrenome</label>
+                              <input type="text" class="form-control" id="sobrenome" placeholder="Silva" required>
+                              <div class="valid-feedback">
+                                Bom!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="user" class="form-label">Usuário</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                  Preencha um nome de usuário.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="cidade" class="form-label">Cidade</label>
+                              <input type="text" class="form-control" id="cidade" required>
+                              <div class="invalid-feedback">
+                                Forneça cidade válida.
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="estado" class="form-label">Estado</label>
+                              <select class="form-select" id="estado" required>
+                                <option selected disabled value="">Escolha...</option>
+                                <option>...</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Selecione um estado válido
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="cep" class="form-label">CEP</label>
+                              <input type="text" class="form-control" id="cep" required>
+                              <div class="invalid-feedback">
+                                Forneça CEP válido.
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Aceito termos e condições
+                                </label>
+                                <div class="invalid-feedback">
+                                  Você deve aceitar antes de continuar.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary btn-block mt-3" type="submit">Cadastre</button>
+                            </div>
+                          </form>
+                        
+                      </form>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+</body>
+
+</html>
