@@ -11,37 +11,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="style/style.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body class="">
     <main>
-        <section class="container-fluid bg">
-            <h1 class="sr-only">Livraria Book net</h1>
+        <section class="container-fluid bg" id="bg-login">
+            <h1 class="sr-only">Livraria Book net, tela de login</h1>
             <section class="row justify-content-center">
                             
-                <div class="col-12 col-sm-6 col-md-3">
-    
+                <div class="col-9 col-sm-7 col-md-6 col-lg-4">
+                    <!--INICIO FORM-->
                     <form action="" class="form-container">
-                        <h3>Login</h3>
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email address</label>
+                        
+                        <h3 class="justify-content-center display-3">Login</h3>
+                        <div class="mb-2">
+                          <label for="email" class="form-label">Endereço de e-mail</label>
                           <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <div id="emailHelp" class="form-text">Nós nunca vamos compartilhar sua senha.</div>
                         </div>
                         <div class="mb-3">
-                          <label for="pw" class="form-label">Password</label>
+                          <label for="pw" class="form-label">Senha</label>
                           <input type="password" class="form-control" id="pw">
                         </div>
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          <label class="form-check-label" for="exampleCheck1">Permanecer conectado</label>
                         </div>
                         
                         <button type="submit" class="btn btn-success btn-block" id="btn-sbmt">Entrar</button>
-                        <a href="signup.html" class="btn btn-primary btn-block">Cadastre-se</a>
+                        <a href="signup.html" class="btn btn-primary btn-block" >Cadastre-se</a>
                       </form>
+                      <!--FIM FORM-->
                 </div>
             </section>
         </section>
-        
     </main>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

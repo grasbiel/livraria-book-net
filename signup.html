@@ -9,37 +9,38 @@
 
     <!--Style-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!--
+    
     <link href="style/style.css" type="text/css" rel="stylesheet">
-    -->
+    
 </head>
 <body>
     <main>
-        <section class="container-fluid bg">
-            <h1 class="sr-only">Livraria Book net</h1>
+        <section class="container-fluid bg" id="bg-cadastro">
+            <h1 class="sr-only h1">Livraria Book net, tela de cadastro</h1>
             <section class="row justify-content-center">
                             
-                <div class="col-12 col-sm-6 col-md-3">
+                <div class="col-9 col-sm-7 col-md-6 col-lg-4">
     
-                    <form action="" class="form-container">
-                        <h3>Book Net</h3>
+                    <form action="" class="form-container-signup">
+                        <h3 class="display-3">Cadastro</h3>
+                        <!--INICIO FORM-->
                         <form class="row g-3 needs-validation" novalidate>
-                            <div class="col-md-4">
-                              <label for="name" class="form-label">Nome</label>
+                            <div class="">
+                              <label for="name" class="form-label mt-2">Nome</label>
                               <input type="text" class="form-control" id="name" placeholder="Joao" required>
                               <div class="valid-feedback">
                                 Bom!
                               </div>
                             </div>
-                            <div class="col-md-4">
-                              <label for="sobrenome" class="form-label">Sobrenome</label>
+                            <div class="">
+                              <label for="sobrenome" class="form-label mt-2">Sobrenome</label>
                               <input type="text" class="form-control" id="sobrenome" placeholder="Silva" required>
                               <div class="valid-feedback">
                                 Bom!
                               </div>
                             </div>
-                            <div class="col-md-4">
-                              <label for="user" class="form-label">Usuário</label>
+                            <div class="">
+                              <label for="user" class="form-label mt-2">Usuário</label>
                               <div class="input-group has-validation">
                                 <span class="input-group-text" id="inputGroupPrepend">@</span>
                                 <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
@@ -48,24 +49,52 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <label for="cidade" class="form-label">Cidade</label>
+                            <div class="">
+                              <label for="cidade" class="form-label mt-2">Cidade</label>
                               <input type="text" class="form-control" id="cidade" required>
                               <div class="invalid-feedback">
                                 Forneça cidade válida.
                               </div>
                             </div>
-                            <div class="col-md-3">
-                              <label for="estado" class="form-label">Estado</label>
+                            <div class="">
+                              <label for="estado" class="form-label mt-3">Estado</label>
                               <select class="form-select" id="estado" required>
                                 <option selected disabled value="">Escolha...</option>
-                                <option>...</option>
+                                <!--Estados-->
+                                <option value="1">Acre</option>
+                                <option value="2">Alagoas</option>
+                                <option value="3">Amapá</option>
+                                <option value="4">Amazonas</option>
+                                <option value="5">Bahia</option>
+                                <option value="6">Ceará</option>
+                                <option value="7">Distrito Federal</option>
+                                <option value="8">Espiríto Santo</option>
+                                <option value="9">Goiás</option>
+                                <option value="10">Maranhão</option>
+                                <option value="11">Mato Grosso</option>
+                                <option value="12">Mato Grosso do Sul</option>
+                                <option value="13">Minas Gerais</option>
+                                <option value="14">Pará</option>
+                                <option value="15">Paraíba</option>
+                                <option value="16">Paraná</option>
+                                <option value="17">Pernambuco</option>
+                                <option value="18">Piauí</option>
+                                <option value="19">Rio de Janeiro</option>
+                                <option value="20">Rio Grande do Sul</option>
+                                <option value="21">Rio Grande do Norte</option>
+                                <option value="22">Rondônia</option>
+                                <option value="23">Roraima</option>
+                                <option value="24">Santa Catarina</option>
+                                <option value="25">São Paulo</option>
+                                <option value="26">Sergipe</option>
+                                <option value="27">Tocantins</option>
+                                <!--FIM ESTADOS-->
                               </select>
                               <div class="invalid-feedback">
                                 Selecione um estado válido
                               </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="mb-1">
                               <label for="cep" class="form-label">CEP</label>
                               <input type="text" class="form-control" id="cep" required>
                               <div class="invalid-feedback">
@@ -87,6 +116,7 @@
                               <button class="btn btn-primary btn-block mt-3" type="submit">Cadastre</button>
                             </div>
                           </form>
+                          <!--FIM FORM-->
                         
                       </form>
                 </div>
