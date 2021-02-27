@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro: Book.Net</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        <section class="container-fluid bg" id="bg-cadastro">
+            <h1 class="sr-only h1">Livraria Book net, tela de cadastro</h1>
+            <section class="row justify-content-center">
+                            
+                <div class="col-9 col-sm-7 col-md-6 col-lg-4">
+    
+                    <form action="" class="form-container-signup">
+                        <h3 class="display-5">Cadastro de Livro</h3>
+                        <!--INICIO FORM-->
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="">
+                              <label for="titulo" class="form-label mt-2">Titulo</label>
+                              <input type="text" class="form-control" id="titulo" placeholder="Um curso de Cálculo Vol. 1" required>
+                              <div class="valid-feedback">
+                                Bom!
+                              </div>
+                            </div>
+                            <div class="">
+                              <label for="autor" class="form-label mt-2">Autor</label>
+                              <input type="text" class="form-control" id="autor" placeholder="Hamilton Luiz Guidorizzi" required>
+                              <div class="valid-feedback">
+                                Bom!
+                              </div>
+                            </div>
+        
+                            <div class="">
+                              <label for="isbn" class="form-label mt-2">ISBN</label>
+                              <input type="text" class="form-control" id="isbn" required placeholder="8521612591">
+                              <div class="invalid-feedback">
+                                Forneça ISBN válido.
+                              </div>
+                            </div>
+                            <div class="">
+                              <label for="estado" class="form-label mt-3">Categoria</label>
+                              <select class="form-select ml-2" id="estado" required>
+                                <option selected disabled value="">Escolha...</option>
+                                <!--CATEGORIAS-->
+                                <option value="1">Inteligencia Artificial</option>
+                                <option value="2">Cálculo 1</option>
+                                <option value="3">Orientação a Objetos</option>
+                                <option value="4">Banco de Dados</option>
+                                <option value="5">Desenvolvimento WEB</option>
+                                <option value="6">Redes de Computadores</option>
+                                <option value="7">Algoritmos</option>
+                                <option value="8">Criptografia</option>
+            
+                                <!--FIM CATEGORIAS-->
+                              </select>
+                              <div class="invalid-feedback">
+                                Selecione um estado válido
+                              </div>
+                            </div>
+                            <!--ORIGEM-->
+                            <div class="">
+                                <label for="origem" class="form-label mt-3">Origem</label>
+                                <select class="form-select ml-2" id="origem" required>
+                                  <option selected disabled value="">Escolha...</option>
+                                  <!--OPCOES ORIEM-->
+                                  <option value="1">Nacional</option>
+                                  <option value="2">Importado</option>
+                                  
+              
+                                  <!--FIM OPCOES ORIGEM-->
+                                </select>
+                                <div class="invalid-feedback">
+                                  Selecione a origem                                </div>
+                              </div>
+                              <!--FIM ORIGEM-->
+                            <div class="">
+                                <label for="quantidade" class="form-label mt-2">Exemplares</label>
+                                <input type="number" class="form-control" id="quantidade" required placeholder="">
+                                <div class="invalid-feedback">
+                                  Forneça número válido.
+                                </div>
+                              </div>
+
+                            <div>
+                                <input type="radio" id="emprestimo" name="livro" value="emprestimo">
+                                <label for="emprestimo" class="mt-3">Empréstimo</label><br>
+                                <input type="radio" id="venda" name="livro" value="venda">
+                                <label for="venda">Venda</label><br>
+                            </div>
+
+                            <div class="col-12">
+                              <button class="btn btn-success btn-block mt-3" type="submit">Cadastre</button>
+                            </div>
+                          </form>
+                          <!--FIM FORM-->
+                        
+                      </form>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+</body>
+
+</html>
